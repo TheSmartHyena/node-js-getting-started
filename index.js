@@ -9,6 +9,7 @@ app.use(express.json());
 
 const modelRobot = require('./models/robot.js');
 const routeRobot = require('./routes/robot.js');
+const routeRobots = require('./routes/robots.js');
 app.models = {};
 
 async function initModels(app){
@@ -17,6 +18,7 @@ async function initModels(app){
 
 async function initRoutes(app){
     await routeRobot.initRobot(app);
+    await routeRobots.initRobots(app);
 }
 
 initModels(app);
