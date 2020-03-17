@@ -22,10 +22,4 @@ async function initRoutes(app){
 initModels(app);
 initRoutes(app);
 
-app.get('/', (req, res) => res.json({key:"value"}))
-
-app.get('/users', (req, res) => {
-    res.json({"msg":"users"});
-})
-
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
