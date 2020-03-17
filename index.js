@@ -22,14 +22,4 @@ async function initRoutes(app){
 initModels(app);
 initRoutes(app);
 
-<<<<<<< HEAD
-pp.listen(PORT, () => console.log(`Listening on ${ PORT }`))
-=======
-app.get('/', (req, res) => res.json({key:"value"}))
-
-app.get('/users', (req, res) => {
-    res.json({"msg":"users"});
-})
-
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
->>>>>>> parent of 1b73967... 1.0
